@@ -14,8 +14,8 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="container">
-      <h1>Propiedades</h1>
+    <div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg">
+      <h1 className="text-3xl font-bold mb-6 text-blue-700">Propiedades</h1>
       <PropertyFilters />
       <PropertyList />
       <PropertyDetails />
