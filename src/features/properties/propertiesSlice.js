@@ -1,12 +1,3 @@
-// import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-// import { fetchProperties } from "../../api/propertiesApi";
-
-// export const loadProperties = createAsyncThunk(
-//   "properties/loadProperties",
-//   async () => await fetchProperties()
-// );
-
-
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchProperties } from "../../api/propertiesApi";
 
@@ -15,7 +6,6 @@ export const loadProperties = createAsyncThunk(
   async (filters) => await fetchProperties(filters)
 );
 
-// ...resto del slice igual
 
 const propertiesSlice = createSlice({
   name: "properties",
